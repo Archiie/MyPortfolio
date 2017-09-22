@@ -1,10 +1,34 @@
 .affix {
 	top: 0px;
 	margin: 0px 20px;
+	width:1100px;
 }
+@media (max-width: 1199px)
+{
+.affix {
+    width: 900px;
+}
+}
+@media (max-width: 991px)
+{
+.affix {
+    width: 680px;
+}
+}
+@media (max-width: 768px)
+{
+.affix {
+	left:15px;
+	right:15px;
+	width:auto;
+}
+}
+
 .affix + .container {
-	padding: 5px;
+	padding: 0px;
 }
+
+/* -------------------------------------------------Above code suggested by Hiren Vaghasiya-------------------------------------------------------------------------- */
 
 h1, h4 {
 	text-shadow: 4px 5px 3px #A866B2; /*#DCD4F9, #F74554 moves to the right, moves down, thickness of text's shadow*/
